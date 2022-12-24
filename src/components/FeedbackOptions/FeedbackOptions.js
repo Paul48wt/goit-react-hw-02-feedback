@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 export const FeedbackOptions = ({ options, handleClick }) => {
   return (
     <div className="feedbackOptions">
@@ -8,4 +9,9 @@ export const FeedbackOptions = ({ options, handleClick }) => {
       ))}
     </div>
   );
+};
+
+FeedbackOptions.propTypes = {
+  options: PropTypes.array,
+  handleClick: PropTypes.func,
 };
